@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&family=Poppins:wght@100;200;400;500;600;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
   background-color: #121212;
   color: white;
 }
+
 .coin-app {
   display: flex;
   flex-direction: column;
@@ -22,6 +24,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .coin-text {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -35,7 +38,7 @@
   width: 600px;
   height: 50px;
   border-radius: 50px;
-  border: 1px solid #11d811;
+  border: 2px solid #11d811;
   background-color: rgba(0, 0, 0, 0);
 
   /* background-image: linear-gradient(
@@ -57,19 +60,26 @@
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+
 .percent-label {
   margin-left: 10px;
 }
+
 .mktcap-label {
   margin-left: 5px;
 }
+
 .name-label {
   margin-left: -30px;
 }
+
+
+
 @media only screen and (max-width: 969px) {
   .coin-labels {
     display: none;
   }
+
   .coin-input {
     border-radius: 50px;
     width: 80vw;

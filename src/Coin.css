@@ -35,6 +35,10 @@
   text-transform: uppercase;
 }
 
+.mobile-labels {
+  display: none;
+}
+
 .coin-data {
   display: flex;
   text-align: center;
@@ -45,6 +49,7 @@
 .coin-price {
   width: 110px;
 }
+
 .coin-volume {
   width: 200px;
 }
@@ -60,30 +65,51 @@
 .red {
   color: #f00606;
 }
+
 .green {
   color: #11d811;
 }
 
+
 @media only screen and (max-width: 969px) {
+  .mobile-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2% 5%;
+  }
+
   .coin-row {
     min-height: 300px;
     flex-direction: column;
     justify-content: space-evenly;
   }
+
   .coin-data {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
+
   .coin-price {
     margin-bottom: 10px;
   }
+
   .coin-volume {
     margin-bottom: 10px;
   }
+
   .coin-percent {
     margin-bottom: 10px;
   }
+
   .coin-marketcap {
     margin-bottom: 10px;
   }
